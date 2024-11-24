@@ -12,6 +12,7 @@
 
 // Notes
 // N/A
+// Not Applicable, 
 
 const sevenBoom = (arr) => {
   for (let i = 0; i < arr.length; i++) {
