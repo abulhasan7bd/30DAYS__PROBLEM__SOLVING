@@ -1,3 +1,5 @@
+// PROBLEM : 6
+
 const possibleBonus = (a, b) => {
   let distance = b - a; // find distance
   return distance >= 1 && distance <= 6;

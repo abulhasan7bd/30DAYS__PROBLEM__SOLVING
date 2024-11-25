@@ -20,33 +20,30 @@
 // Notes
 // N/A
 
-{
-  // SULUTION : 1
-  const oddishOrEvenish = (weather) => {
-    let sum = 0;
-    let weather_split = weather.toString().split("");
-    for (let i = 0; i < weather_split.length; i++) {
-      sum = sum + Number(weather_split[i]);
-    }
+// SULUTION : 1
+const oddishOrEvenish = (weather) => {
+  let sum = 0;
+  let weather_split = weather.toString().split("");
+  for (let i = 0; i < weather_split.length; i++) {
+    sum = sum + Number(weather_split[i]);
+  }
+  if (sum % 2 === 0) {
+    return "Evenish";
+  } else {
+    return "Oddish";
+  }
+};
+console.log(oddishOrEvenish(123));
+console.log(oddishOrEvenish(373));
 
-    if (sum % 2 === 0) {
-      return "Evenish";
-    } else {
-      return "Oddish";
-    }
-  };
-  console.log(oddishOrEvenish(123));
-  console.log(oddishOrEvenish(373));
-}
 
-{
-  // SULUTION : 2
-  const oddishOrEvenish2 = (number) => {
-    const digits = number.toString().split("");
-    const sum = digits.reduce((total, digit) => total + Number(digit), 0);
-    return sum % 2 === 0 ? "Evenish" : "Oddish";
-  };
 
-  console.log(oddishOrEvenish2(123));
-  console.log(oddishOrEvenish2(373));
-}
+// SULUTION : 2
+const oddishOrEvenish2 = (number) => {
+  const digits = number.toString().split("");
+  const sum = digits.reduce((total, digit) => total + Number(digit), 0);
+  return sum % 2 === 0 ? "Evenish" : "Oddish";
+};
+
+console.log(oddishOrEvenish2(123));
+console.log(oddishOrEvenish2(373));

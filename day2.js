@@ -10,6 +10,7 @@
 // Return 0 if given an empty array.
 // All array items are of the type bool (true or false).
 
+// SULUTION : 1
 const countTrueValues = (array) => {
     let trueCount = 0;
     for (let i = 0; i < array.length; i++) {

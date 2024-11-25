@@ -15,6 +15,7 @@
 // Notes
 // Your function should return a function, not a string.
 
+// SULUTION : 1
 function redundant(str) {
   return function () {
     return str;
